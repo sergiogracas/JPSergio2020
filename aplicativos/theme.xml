@@ -1,0 +1,35 @@
+<theme>
+<!-- Jotapê Arcades - tema interno, editado de acordo com meu gosto e necessidade -->
+
+
+	<formatVersion>4</formatVersion>
+	<include>./../theme.xml</include>
+	
+	<view name="system, basic, detailed, video, grid"> <!-- adicionada variáveis para exibir video e bg  -->
+	
+	<image name="logo"><!-- imagem do logo roleta -->
+	<path>./system.png</path>
+	</image>
+	
+	<video name="console" extra="true"> <!-- carrega o video no menu principal  -->
+	<path>./video.mp4</path>
+	<origin>0 0</origin>
+	<color>FFFFFF</color>
+	<pos>0.125 0.265</pos>
+	<size>0.34 0.345</size>
+	<zIndex>70</zIndex>  <!-- definição da posição de camada (cuidado pois afeta o menu interno) deve ser a mesma do "bg" -->
+	</video>
+	
+	<image name="bg" extra="true"> <!-- menu transparente (tem que declarar a variável "bg" ao invés de console senão não aparece) -->
+	<path>./menu.png</path>
+	<origin>0 0</origin>
+	<pos>0 0</pos>
+	<size>1 1</size>
+	<zIndex>70</zIndex>   <!-- definição da posição de camada (cuidado pois afeta o menu interno)  -->
+	</image>
+	
+	</view>
+	
+	
+	
+</theme>
